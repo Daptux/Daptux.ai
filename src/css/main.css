@@ -104,12 +104,13 @@ a:hover {
 .button-primary {
   background-color: var(--primary);
   color: white;
+  box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
 }
 
 .button-primary:hover {
   background-color: var(--primary-dark);
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+  transform: translateY(-3px);
 }
 
 .button-secondary {
@@ -157,6 +158,24 @@ nav {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-links {
@@ -217,6 +236,31 @@ nav {
   color: white;
   padding: 120px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(30px); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -224,6 +268,7 @@ nav {
   font-size: 3.5rem;
   margin-bottom: 20px;
   line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-content p {
@@ -233,6 +278,7 @@ nav {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero-cta {
@@ -262,11 +308,13 @@ nav {
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
   border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
 }
 
 .card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-5px);
+  border-left: 4px solid var(--primary-dark);
 }
 
 .card-icon {
@@ -431,7 +479,7 @@ nav {
    ============================================ */
 
 footer {
-  background-color: var(--secondary);
+  background: linear-gradient(135deg, var(--secondary) 0%, #0a0a0a 100%);
   color: white;
   padding: 60px 20px 30px;
 }
@@ -478,13 +526,16 @@ footer-content {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 102, 255, 0.2);
   border-radius: 50%;
   transition: all 0.3s ease;
+  border: 2px solid rgba(0, 102, 255, 0.3);
 }
 
 .footer-social a:hover {
   background-color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-3px);
 }
 
 .footer-bottom {
