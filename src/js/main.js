@@ -1,12 +1,14 @@
 // Función para cambiar idioma
-function changeLanguage(lang) {
+function changeLanguage(lang, event) {
   i18n.setLanguage(lang);
   
   // Actualizar botones de idioma
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.remove('active');
   });
-  event.target.classList.add('active');
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add('active');
+  }
 }
 
 // Función para desplazarse a una sección
@@ -20,6 +22,8 @@ function scrollToSection(sectionId) {
 // Llenar servicios dinámicamente
 function populateServices() {
   const servicesGrid = document.getElementById('servicesGrid');
+  if (!servicesGrid) return;
+  
   const services = i18n.t('services.items');
   
   servicesGrid.innerHTML = services.map(service => `
@@ -31,9 +35,29 @@ function populateServices() {
   `).join('');
 }
 
+// Llenar líneas de negocio dinámicamente
+function populateBusinessLines() {
+  const grid = document.getElementById('businessLinesGrid');
+  if (!grid) return;
+  
+  const lines = i18n.t('business_lines.items');
+  const icons = ['🌐', '💳', '🐄', '🍽️', '🏨', '⚕️'];
+  
+  grid.innerHTML = lines.map((line, index) => `
+    <div class="card">
+      <div class="card-icon">${icons[index] || '⚙️'}</div>
+      <h3>${line.name}</h3>
+      <span class="card-badge">${line.industry}</span>
+      <p>${line.description}</p>
+    </div>
+  `).join('');
+}
+
 // Llenar beneficios dinámicamente
 function populateBenefits() {
   const benefitsList = document.getElementById('benefitsList');
+  if (!benefitsList) return;
+  
   const benefits = i18n.t('collaborative.benefits');
   
   benefitsList.innerHTML = benefits.map(benefit => `
@@ -82,6 +106,7 @@ function openQuoteFlow() {
 // Inicialización
 document.addEventListener('DOMContentLoaded', () => {
   populateServices();
+  populateBusinessLines();
   populateBenefits();
   
   // Actualizar botón de idioma activo
@@ -94,6 +119,29 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.remove('active');
     }
   });
+
+  // Resaltar la navegación según la sección visible
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sections = document.querySelectorAll('section[id]');
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+      if (!link) return;
+
+      if (entry.isIntersecting) {
+        navLinks.forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, { threshold: 0.45 });
+
+  sections.forEach(section => sectionObserver.observe(section));
+  const initialLink = document.querySelector('.nav-links a[href="#inicio"]');
+  if (initialLink) {
+    initialLink.classList.add('active');
+  }
 });
 
 // Animación al hacer scroll

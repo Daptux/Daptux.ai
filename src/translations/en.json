@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "quoteflow": "Quotes",
+    "contact": "Contact",
+    "business_lines": "Business Lines"
+  },
+  "hero": {
+    "title": "Transform your business with technology and artificial intelligence",
+    "subtitle": "SaaS platforms, automation and enterprise solutions designed to accelerate your growth.",
+    "cta": "Get Started Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Custom Software",
+        "description": "We develop personalized applications for your business with scalable and secure architecture."
+      },
+      {
+        "title": "SaaS Platforms",
+        "description": "Cloud-based solutions ready to use, with monthly subscription and no implementation commitment."
+      },
+      {
+        "title": "Automation & AI",
+        "description": "Artificial intelligence applied to optimize processes, reduce costs and improve decision-making."
+      },
+      {
+        "title": "Digital Consulting",
+        "description": "Strategic advice on digital transformation, technology and business models."
+      }
+    ]
+  },
+  "business_lines": {
+    "title": "Business Lines",
+    "subtitle": "Vertical solutions designed for specific industries",
+    "items": [
+      {
+        "name": "Daptux Web",
+        "industry": "Web Design",
+        "description": "Modern corporate websites with CMS, SEO and content management."
+      },
+      {
+        "name": "Daptux FlowPay",
+        "industry": "Fintech",
+        "description": "Payment request system, approvals and enterprise document management."
+      },
+      {
+        "name": "Daptux Ganadería",
+        "industry": "Agriculture",
+        "description": "Comprehensive livestock management, vaccination, production and reporting for ranchers."
+      },
+      {
+        "name": "Daptux Restaurant",
+        "industry": "Food & Beverage",
+        "description": "Digital menu, orders, inventory and cash for restaurants and cafes."
+      },
+      {
+        "name": "Daptux Hotel",
+        "industry": "Hospitality",
+        "description": "Reservation system, check-in/out and billing for accommodations."
+      },
+      {
+        "name": "Daptux Clinic",
+        "industry": "Healthcare",
+        "description": "Digital medical records, appointment scheduling and patient management."
+      }
+    ]
+  },
+  "why_daptux": {
+    "title": "Why Choose Daptux?",
+    "items": [
+      "Experience in multiple industries and technologies",
+      "Team of certified developers",
+      "Scalable and maintainable solutions",
+      "Permanent technical support",
+      "Agile and transparent methodology",
+      "Integration with modern technologies"
+    ]
+  },
+  "collaborative": {
+    "title": "Collaborative Model",
+    "benefits": [
+      "Weekly follow-up meetings",
+      "Delivery of functional increments",
+      "Continuous customer feedback",
+      "Complete technical documentation",
+      "Training for your team",
+      "Post-launch maintenance and support"
+    ]
+  },
+  "contact": {
+    "title": "Contact Our Team",
+    "placeholder_name": "Your full name",
+    "placeholder_email": "your@email.com",
+    "placeholder_company": "Your company",
+    "placeholder_phone": "Your phone",
+    "placeholder_message": "Tell us about your project...",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "mission": "Transforming businesses with technology",
+    "rights": "All rights reserved",
+    "links": {
+      "privacy": "Privacy",
+      "terms": "Terms of Use",
+      "contact": "Contact"
+    }
+  }
+}

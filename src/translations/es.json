@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "quoteflow": "Cotizaciones",
+    "contact": "Contacto",
+    "business_lines": "Líneas de Negocio"
+  },
+  "hero": {
+    "title": "Transformamos tu negocio con tecnología e inteligencia artificial",
+    "subtitle": "Plataformas SaaS, automatización y soluciones empresariales diseñadas para acelerar tu crecimiento.",
+    "cta": "Comenzar Ahora"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "items": [
+      {
+        "title": "Software a Medida",
+        "description": "Desarrollamos aplicaciones personalizadas para tu negocio con arquitectura escalable y segura."
+      },
+      {
+        "title": "Plataformas SaaS",
+        "description": "Soluciones en la nube listas para usar, con suscripción mensual y sin compromiso de implementación."
+      },
+      {
+        "title": "Automatización e IA",
+        "description": "Inteligencia artificial aplicada para optimizar procesos, reducir costos y mejorar decisiones."
+      },
+      {
+        "title": "Consultoría Digital",
+        "description": "Asesoramiento estratégico en transformación digital, tecnología y modelos de negocio."
+      }
+    ]
+  },
+  "business_lines": {
+    "title": "Líneas de Negocio",
+    "subtitle": "Soluciones verticales diseñadas para industrias específicas",
+    "items": [
+      {
+        "name": "Daptux Web",
+        "industry": "Diseño Web",
+        "description": "Sitios web corporativos modernos con CMS, SEO y gestión de contenidos."
+      },
+      {
+        "name": "Daptux FlowPay",
+        "industry": "Fintech",
+        "description": "Sistema de solicitudes de pago, aprobaciones y gestión documental empresarial."
+      },
+      {
+        "name": "Daptux Ganadería",
+        "industry": "Agro",
+        "description": "Gestión integral de ganado, vacunación, producción y reportes para ganaderos."
+      },
+      {
+        "name": "Daptux Restaurant",
+        "industry": "Gastronomía",
+        "description": "Menú digital, pedidos, inventario y caja para restaurantes y cafeterías."
+      },
+      {
+        "name": "Daptux Hotel",
+        "industry": "Hotelería",
+        "description": "Sistema de reservas, check-in/out y facturación para alojamientos."
+      },
+      {
+        "name": "Daptux Clinic",
+        "industry": "Salud",
+        "description": "Historia clínica digital, agenda de citas y gestión de pacientes."
+      }
+    ]
+  },
+  "why_daptux": {
+    "title": "¿Por qué elegir Daptux?",
+    "items": [
+      "Experiencia en múltiples industrias y tecnologías",
+      "Equipo de desarrolladores certificados",
+      "Soluciones escalables y mantenibles",
+      "Soporte técnico permanente",
+      "Metodología ágil y transparente",
+      "Integración con tecnologías modernas"
+    ]
+  },
+  "collaborative": {
+    "title": "Modelo Colaborativo",
+    "benefits": [
+      "Reuniones semanales de seguimiento",
+      "Entrega de incrementos funcionales",
+      "Feedback continuo del cliente",
+      "Documentación técnica completa",
+      "Capacitación al equipo del cliente",
+      "Mantenimiento y soporte post-lanzamiento"
+    ]
+  },
+  "contact": {
+    "title": "Contacta con Nuestro Equipo",
+    "placeholder_name": "Tu nombre completo",
+    "placeholder_email": "tu@email.com",
+    "placeholder_company": "Tu empresa",
+    "placeholder_phone": "Tu teléfono",
+    "placeholder_message": "Cuéntanos sobre tu proyecto...",
+    "submit": "Enviar Mensaje"
+  },
+  "footer": {
+    "mission": "Transformando negocios con tecnología",
+    "rights": "Todos los derechos reservados",
+    "links": {
+      "privacy": "Privacidad",
+      "terms": "Términos de Uso",
+      "contact": "Contacto"
+    }
+  }
+}

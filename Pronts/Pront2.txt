@@ -1,0 +1,293 @@
+# DAPTUX - PLAN DE REESTRUCTURACIÓN WEB Y MIGRACIÓN A GITHUB
+
+## Objetivo
+
+Crear un nuevo espacio de trabajo para la página web de Daptux que permita evolucionar el proyecto utilizando Claude, Visual Studio Code y GitHub como repositorio principal.
+
+---
+
+# 1. CREAR NUEVO ESPACIO DE TRABAJO
+
+## Origen
+
+```text
+C:\Users\david\dgl\Documents\Daptux\Codex\01_web_hostinger\public_html_ORGANIZADO_COMPLETO
+```
+
+## Destino
+
+```text
+C:\Users\david\dgl\Documents\Daptux\Daptux_pagina_web
+```
+
+## Tareas
+
+* Crear la carpeta destino.
+* Copiar absolutamente todos los archivos.
+* Mantener funcionalidad actual.
+* Verificar que la página siga funcionando localmente.
+
+---
+
+# 2. REORGANIZAR ESTRUCTURA DEL PROYECTO
+
+La estructura final debe quedar similar a:
+
+```text
+Daptux_pagina_web
+│
+├── assets
+│   ├── css
+│   ├── js
+│   ├── images
+│   ├── icons
+│   └── fonts
+│
+├── pages
+│
+├── components
+│
+├── Markdown
+│
+├── docs
+│
+├── translations
+│
+├── api
+│
+├── index.php
+│
+├── README.md
+│
+└── .gitignore
+```
+
+Mover recursos a sus carpetas correspondientes.
+
+Eliminar archivos duplicados.
+
+Eliminar código muerto.
+
+Eliminar imágenes sin uso.
+
+Documentar cualquier cambio importante.
+
+---
+
+# 3. IMPLEMENTAR CONTENIDO DE MARKDOWN
+
+Ruta:
+
+```text
+C:\Users\david\dgl\Documents\Daptux\Daptux_pagina_web\Markdown
+```
+
+## Objetivo
+
+Analizar todos los archivos .md.
+
+Identificar:
+
+* Servicios
+* Productos
+* MVP
+* Casos de uso
+* Planes de negocio
+* Soluciones empresariales
+* Automatizaciones
+* FlowPay
+* Ganadería
+* Hoteles
+* Restaurantes
+* Desarrollo a medida
+
+Convertir este contenido en nuevas secciones de la web.
+
+No dejar contenido relevante únicamente en Markdown.
+
+Integrarlo visualmente en la página.
+
+---
+
+# 4. NUEVA ESTRATEGIA WEB DAPTUX
+
+La web debe vender software.
+
+No debe verse como una empresa de páginas web.
+
+Debe verse como una empresa de tecnología e inteligencia artificial.
+
+## Líneas de negocio
+
+### Daptux FlowPay
+
+Gestión de solicitudes de pago.
+
+### Daptux Custom Software
+
+Software empresarial a medida.
+
+### Daptux AI
+
+Automatización e inteligencia artificial.
+
+### Daptux Agro
+
+Software ganadero.
+
+### Daptux Hotel
+
+Software hotelero.
+
+### Daptux Restaurant
+
+Software para restaurantes.
+
+### Daptux Web
+
+Diseño web profesional.
+
+---
+
+# 5. IMPLEMENTAR MULTIIDIOMA
+
+Agregar selector:
+
+```text
+ES | EN
+```
+
+Ubicación:
+
+Header superior.
+
+## Requisitos
+
+* Español por defecto.
+* Cambio instantáneo.
+* Guardar idioma en localStorage.
+* No usar Google Translate.
+* Traducciones propias.
+
+Crear:
+
+```text
+translations/es.json
+translations/en.json
+```
+
+Crear:
+
+```text
+assets/js/language.js
+```
+
+Todo texto visible debe ser traducible.
+
+---
+
+# 6. MEJORAR EXPERIENCIA VISUAL
+
+Objetivo:
+
+Parecer una startup SaaS moderna.
+
+Inspiración:
+
+* Stripe
+* Vercel
+* Linear
+* Notion
+* OpenAI
+
+## Mejoras
+
+* Animaciones suaves.
+* Hero principal más profesional.
+* Sección de productos.
+* Casos de éxito.
+* Beneficios.
+* Tecnologías utilizadas.
+* Formulario de contacto moderno.
+* CTA visibles.
+
+---
+
+# 7. SEO
+
+Agregar:
+
+* Meta title.
+* Meta description.
+* Open Graph.
+* Sitemap.
+* Robots.
+* Structured Data.
+
+Palabras clave:
+
+* Software a medida Colombia
+* Desarrollo de software empresarial
+* Inteligencia artificial para empresas
+* Automatización empresarial
+* Aplicaciones web empresariales
+* Desarrollo SaaS
+
+---
+
+# 8. GITHUB
+
+Repositorio:
+
+```text
+https://github.com/Daptux/Daptux.ai
+```
+
+## Configuración
+
+Inicializar Git.
+
+Crear .gitignore.
+
+Realizar commit inicial.
+
+Crear commits organizados por funcionalidades.
+
+Ejemplo:
+
+```text
+feat: reorganiza estructura del proyecto
+feat: implementa sistema multiidioma
+feat: integra contenido markdown
+feat: mejora landing principal
+```
+
+Subir todos los cambios al repositorio principal.
+
+---
+
+# 9. ENTREGABLES
+
+Al finalizar entregar:
+
+## Resumen Ejecutivo
+
+* Qué se reorganizó.
+* Qué se eliminó.
+* Qué se agregó.
+
+## Reporte Técnico
+
+* Estructura final.
+* Archivos creados.
+* Archivos modificados.
+
+## Estado Git
+
+* Rama utilizada.
+* Último commit.
+* URL del repositorio.
+
+## Resultado
+
+La página debe quedar preparada para convertirse en la plataforma principal de Daptux y soportar el crecimiento de todas las líneas de negocio futuras.

@@ -3,40 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daptux.ai - Transformamos tu negocio con tecnología. Software personalizado, soluciones SaaS y desarrollo a medida.">
-    <title>Daptux.ai - Transformamos Tu Negocio</title>
+    
+    <!-- SEO - Meta Tags -->
+    <meta name="description" content="Daptux.ai - Plataformas SaaS, software a medida e inteligencia artificial para empresas. Soluciones en fintech, ganadería, hotelería y restaurantes.">
+    <meta name="keywords" content="software a medida, SaaS, inteligencia artificial, automatización empresarial, desarrollo software Colombia, Daptux">
+    <meta name="author" content="Daptux.ai">
+    <meta name="theme-color" content="#001134">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="canonical" href="https://daptux.ai/">
+    
+    <!-- Open Graph - Redes Sociales -->
+    <meta property="og:title" content="Daptux.ai - Software Empresarial e Inteligencia Artificial">
+    <meta property="og:description" content="Transformamos negocios con tecnología. Soluciones SaaS, software personalizado e IA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daptux.ai/">
+    <meta property="og:image" content="https://daptux.ai/src/assets/logo-perfil.png">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daptux.ai - Software Empresarial e Inteligencia Artificial">
+    <meta name="twitter:description" content="Plataformas SaaS, software a medida e inteligencia artificial para tu negocio.">
+    <meta name="twitter:image" content="https://daptux.ai/src/assets/logo-perfil.png">
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Daptux.ai",
+      "url": "https://daptux.ai",
+      "logo": "https://daptux.ai/src/assets/logo-perfil.png",
+      "description": "Plataformas SaaS, software a medida e inteligencia artificial para empresas",
+      "sameAs": [
+        "https://linkedin.com/company/daptux",
+        "https://twitter.com/daptux",
+        "https://github.com/daptux"
+      ]
+    }
+    </script>
+    
+    <title>Daptux.ai - Software Empresarial, SaaS e Inteligencia Artificial</title>
     
     <!-- Estilos -->
     <link rel="stylesheet" href="src/css/fonts.css">
     <link rel="stylesheet" href="src/css/main.css">
-    
-    <!-- Meta Tags -->
-    <meta name="theme-color" content="#0066ff">
-    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200&display=swap" rel="stylesheet" />
     
     <!-- Favicon -->
     <link rel="icon" href="src/assets/logo-perfil.png" type="image/png">
-    <link rel="shortcut icon" href="src/assets/logo-perfil.png" type="image/png">
+    <link rel="apple-touch-icon" href="src/assets/logo-perfil.png">
 </head>
 <body>
     <!-- NAVEGACIÓN -->
     <header>
-        <nav>
+        <nav class="site-nav">
             <div class="logo">
                 <img src="src/assets/logo-perfil.png" alt="Daptux Logo" class="logo-img">
-                <span class="logo-text">Daptux<span class="logo-accent">AI</span></span>
+                <div>
+                    <span class="logo-text">Daptux<span class="logo-accent">AI</span></span>
+                    <span class="logo-tag">Business Software & AI</span>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
-                <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-                <li><a href="#lineas-negocio" data-i18n="nav.businessLines">Líneas de Negocio</a></li>
-                <li><a href="#colaborativo" data-i18n="nav.collaborative">Modelo Colaborativo</a></li>
-                <li><a href="#cotizaciones" data-i18n="nav.quoteflow">Cotizaciones</a></li>
-                <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
-            </ul>
-            <div class="language-switcher">
-                <button class="lang-btn active" onclick="changeLanguage('es')">ES</button>
-                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+                    <li><a href="#lineas-negocio" data-i18n="nav.business_lines">Líneas de Negocio</a></li>
+                    <li><a href="#cotizaciones" data-i18n="nav.quoteflow">Cotizaciones</a></li>
+                    <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('es', event)">ES</button>
+                    <button class="lang-btn" onclick="changeLanguage('en', event)">EN</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -45,9 +85,9 @@
     <section class="hero" id="inicio">
         <div class="container hero-grid">
             <div class="hero-copy">
-                <span class="eyebrow">Business Software & AI</span>
-                <h1 data-i18n="hero.title">Transformamos Tu Negocio con Tecnología</h1>
-                <p data-i18n="hero.subtitle">Software personalizado, soluciones SaaS y desarrollo a medida para empresas que quieren crecer.</p>
+                <span class="eyebrow">AI-First Fintech</span>
+                <h1 data-i18n="hero.title">Transformamos tu negocio con tecnología financiera segura</h1>
+                <p data-i18n="hero.subtitle">Plataformas SaaS, automatización y soluciones de negocio diseñadas para empresas que buscan excelencia operacional.</p>
                 <div class="hero-cta">
                     <button class="button button-primary" onclick="scrollToSection('cotizaciones')" data-i18n="hero.cta">Empezar Ahora</button>
                     <button class="button button-secondary" onclick="scrollToSection('contacto')" data-i18n="nav.contact">Contacto</button>
@@ -59,16 +99,52 @@
                     </div>
                     <div class="hero-pill">
                         <strong>22</strong>
-                        <span>Clientes en producción</span>
+                        <span>Clientes activos</span>
                     </div>
                     <div class="hero-pill">
                         <strong>9</strong>
-                        <span>Líneas de negocio</span>
+                        <span>Líneas verticales</span>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <img src="src/assets/hero-graphic.svg" alt="Visual Daptux" class="hero-graphic">
+            <div class="hero-right">
+                <div class="glass-card hero-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="panel-label">Fintech Insights</p>
+                            <h3>Dashboard Ejecutivo</h3>
+                        </div>
+                        <span class="status-chip">Online</span>
+                    </div>
+                    <div class="panel-metrics">
+                        <div class="metric-item">
+                            <span class="metric-title">Cupo Disponible</span>
+                            <strong>$5.0M</strong>
+                        </div>
+                        <div class="metric-item">
+                            <span class="metric-title">Uso</span>
+                            <strong>25%</strong>
+                        </div>
+                        <div class="metric-progress">
+                            <div class="progress-bar"><span style="width: 25%"></span></div>
+                            <span class="progress-label">75% libre</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card hero-panel stacked-panels">
+                    <div class="mini-card">
+                        <span class="mini-label">IA</span>
+                        <h4>Ahorro estimado</h4>
+                        <strong>$120K</strong>
+                        <p>Recomendación de costos para optimizar tus suscripciones.</p>
+                    </div>
+                    <div class="mini-card">
+                        <span class="mini-label">AI</span>
+                        <h4>Riesgo</h4>
+                        <strong>2.4%</strong>
+                        <p>Modelo predictivo de flujo de caja con alta precisión.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -86,30 +162,13 @@
     <!-- LÍNEAS DE NEGOCIO -->
     <section class="section section-alt" id="lineas-negocio">
         <div class="container">
-            <h2 data-i18n="businessLines.title">Líneas de Negocio</h2>
-            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 50px;" data-i18n="businessLines.description">Soluciones verticales probadas y listas para usar</p>
+            <div class="section-intro">
+                <h2 data-i18n="business_lines.title">Líneas de Negocio</h2>
+                <p data-i18n="business_lines.subtitle">Soluciones verticales diseñadas para industrias específicas</p>
+            </div>
             
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon">🌐</div>
-                    <h3 data-i18n="businessLines.web.title">Daptux Web</h3>
-                    <p data-i18n="businessLines.web.description">Sitios web corporativos con blog, SEO y panel de administración</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💳</div>
-                    <h3 data-i18n="businessLines.flowpay.title">Daptux FlowPay</h3>
-                    <p data-i18n="businessLines.flowpay.description">Plataforma SaaS para gestión de solicitudes de pago y proveedores</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🐄</div>
-                    <h3 data-i18n="businessLines.ranching.title">Daptux Ganadería</h3>
-                    <p data-i18n="businessLines.ranching.description">Software especializado para control ganadero e inventario</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🍽️</div>
-                    <h3 data-i18n="businessLines.restaurant.title">Daptux Restaurante</h3>
-                    <p data-i18n="businessLines.restaurant.description">Solución completa para gestión de restaurantes y cafeterías</p>
-                </div>
+            <div class="services-grid" id="businessLinesGrid">
+                <!-- Se llena dinámicamente con las líneas de negocio -->
             </div>
         </div>
     </section>

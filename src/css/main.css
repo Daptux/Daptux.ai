@@ -63,6 +63,12 @@ img {
   max-width: 100%;
 }
 
+.nav-links a.active {
+  color: white;
+  background: rgba(31, 94, 255, 0.16);
+  border-color: rgba(31, 94, 255, 0.24);
+}
+
 /* ============================================
    TIPOGRAFÍA
    ============================================ */
@@ -108,6 +114,7 @@ p {
 a {
   color: var(--primary);
   transition: color 0.25s ease;
+  text-decoration: none;
 }
 
 a:hover {
@@ -202,68 +209,98 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(7, 26, 61, 0.92);
-  backdrop-filter: blur(18px);
+  background: rgba(0, 17, 52, 0.96);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 nav {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 24px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  background: rgba(0, 17, 52, 0.96);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0 0 20px 20px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 14px;
 }
 
 .logo-text {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: white;
+}
+
+.logo-tag {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.2;
 }
 
 .logo-accent {
   color: var(--primary);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 28px;
+  gap: 12px;
+  list-style: none;
+}
+
+.nav-links li {
   list-style: none;
 }
 
 .nav-links a {
-  color: rgba(235, 242, 255, 0.85);
-  position: relative;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(235, 242, 255, 0.95);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
   color: white;
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: width 0.25s ease;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
+  display: none;
 }
 
 .language-switcher {
@@ -393,6 +430,129 @@ nav {
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
 }
 
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 28px;
+  padding: 26px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.hero-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.panel-label {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: white;
+}
+
+.panel-metrics {
+  display: grid;
+  gap: 18px;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.metric-title {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.metric-item strong {
+  font-size: 1.3rem;
+}
+
+.metric-progress {
+  display: grid;
+  gap: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.progress-label {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.stacked-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.mini-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 20px;
+}
+
+.mini-label {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(122, 243, 246, 0.14);
+  color: var(--tertiary);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.mini-card h4 {
+  margin: 14px 0 8px;
+  font-size: 1.05rem;
+  color: white;
+}
+
+.mini-card p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
 /* ============================================
    TARJETAS
    ============================================ */
@@ -432,6 +592,19 @@ nav {
 .card p {
   margin-bottom: 0;
   color: var(--text-muted);
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(122, 243, 246, 0.12);
+  color: var(--tertiary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 12px 0;
 }
 
 .grid,
